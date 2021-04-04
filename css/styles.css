@@ -1,7 +1,7 @@
 :root{
     --main-color: rgb(27, 235, 155);
     --text-color: rgb(0, 0, 0);
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Inter', sans-serif;
 }
 *{
     margin: 0;
@@ -14,7 +14,7 @@ html{
 }
 body{
     background-color: var(--main-color);
-    max-width: 900px;
+
 }
 .header{
     display: flex;
@@ -86,3 +86,231 @@ body{
     text-shadow: 2px 2px 5px rgba(38,16,10,0.32);
 }
 
+/* CAROUSEL */
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 3rem;
+    position: relative;
+}
+.carousel__container{
+    white-space: nowrap;
+    margin: 7rem 0;
+    padding-bottom: 1rem;
+}
+.carousel-card{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    border-radius: 2.5rem;
+    background-color: var(--text-color);
+    overflow: hidden;
+    margin: 1rem;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+.carousel-car__img{
+    width: 200px;
+    height: 250px;
+    object-fit:cover;
+    object-position: center;
+}
+.carousel__container:hover .carousel-card {
+    opacity: 0.3;
+}
+.carousel__container:hover .carousel-card:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carousel-card:hover ~ .carousel-card {
+    transform: translate3d(100px, 0, 0);
+}
+.carousel__container:hover .carousel-card {
+    opacity: 0.3;
+}
+.carousel__container:hover .carousel-card:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carousel-card{
+    display: inline-block;
+    border-radius: 2.5rem;
+    background-color: var(--text-color);
+    overflow: hidden;
+    margin: 1rem;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+.carousel-card__img{
+    width: 200px;
+    height: 250px;
+    object-fit:cover;
+    object-position: center;
+}
+.carousel-card__details{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9)0%, rgba(0, 0, 0, 0)100%);
+    font-size: 1rem;
+    opacity: 1;
+    transition: 450ms;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carousel-card__details:hover{
+    background: none;
+    font-size: 1rem;
+    opacity: 1;
+    transition: 450ms;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carousel-card__details img{
+    display: inline-flex;
+    width: 30px;
+    margin: 0.5rem;
+    margin-top:15rem;
+}
+.carousel-item__details--title{
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.carousel-item__details--subtitle{
+    margin-left: 1rem;
+    color: white;
+    line-height: 2.5rem;
+}
+
+/* NUEVA PAGINA (INICIO DE SESION) */
+body{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.login{
+    background:linear-gradient(0deg, rgba(27,235,155,1) 0%, rgba(129,218,255,0.9164040616246498) 100%);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    min-height: calc(100vh - 200px);
+}   
+.login__container{
+    background-color: rgba(151, 151, 151, 0.247);
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    color: white;
+    padding:  3rem 2.5rem;
+    min-height: 500px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+} 
+.login__container h2{
+    font-size: 3rem;
+}           
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+} 
+
+.login__container--form label{
+    font-size: 1.4rem;
+    width: 110px;
+    display: flex;
+    justify-content: space-around;
+ 
+}
+.login__container--remenber input{
+    width: 16px;
+    height: 16px;
+}
+.login__container--remenber {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}  
+.login__container--remenber a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+} 
+.login__container--remenber a:hover {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}   
+.login__container--social >div{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.login__container--social >div >img{
+    width: 30px;
+    margin-right: 10px;
+}                   
+.login__container--register{
+    font-size: 1.2rem;
+}
+.login__container--register{
+    font-size: 1.2rem;
+}
+.login__container--register a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.login__container--register a:hover{
+    text-decoration:underline;
+}
+input{
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 1.5rem 0;
+    font-size: 1.4rem;
+    outline: none;
+    margin-bottom: 3rem;
+}   
+.button{
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 2.5rem;
+    margin: 1rem 0 2rem 0;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(38,16,10,0.32);
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+.footer{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2rem;
+    height: 50px;
+}
+.footer a{
+    margin:  auto 1rem;
+}

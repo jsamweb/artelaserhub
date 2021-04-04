@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+<link rel="import" href="https://source.unsplash.com/random">
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="./assets/logo-platzi.png" alt="">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="./assets/icons/user.svg" alt="user">
+            </div>
+            <ul>
+                <li><a href="/">Perfil</a> </li>
+                <li><a href="/">Cerrar Sesion</a> </li>
+            </ul>
+        </div>
+    </header>
+    <main >
+        <section class="login">
+            <section class="login__container">
+                <h2>Inicia Sesión</h2>
+                <form class="login__container--form">
+                    <input class="input" type="text" placeholder="Correo">
+                    <input class="input" type="text" placeholder="Contraseña">
+                    <button class="button">Iniciar Sesión</button>
+                    <div class="login__container--remenber">
+                        <label>
+                            <input type="checkbox" name="" id="cbox1" value="checkbox">Recuérdame
+                        </label>
+                        <a href="#">Olvidé mi contraseña</a>
+                    </div>
+                </form>
+                <section class="login__container--social">
+                    <div><img src="./assets/icons/google-icon.png" alt="google">Inicia sesion con Google</div>
+                    <div><img src="./assets/icons//twitter-icon.png" alt="twitter">Inicia sesion con Twitter</div>
+                </section>
+                <p class="login__container--register">¿No tienes cuenta? <a href="#">Registrate</a></p>
+
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="#">Terminos y Condiciones.</a>
+        <a href="#">Politica de Protección de Datos.</a>
+        <a href="#">Centro de Ayuda.</a>
+    </footer>
+</body>
+</html>
