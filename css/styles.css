@@ -336,3 +336,108 @@ input{
 .no-fix{
     position: static;
 }
+/* 404-NOTFOUND */
+.main-not{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    color:rgb(56, 56, 56)
+}
+
+.main-not__not--title{
+    font-size: 6rem;
+    margin: 3rem 0 3rem 0;
+    font-weight: lighter;
+}
+.main-not__not--parrafo{
+    font-size: 1.8rem;
+    text-align: justify;
+    background-color:rgba(255, 255, 255, 0.329);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    line-height: 1.5;
+}
+.main-not__not--sorry{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+}
+.main-not__not--sorry-lo{
+    font-size: 6rem;
+    font-weight: 700;
+    align-self: start;
+}
+.main-div-not{
+    display: flex;
+}
+.bounce {
+    animation-name: bounce;
+  }
+.bounce-2 {
+    animation-name: bounce-2;
+  }
+.animated {
+    animation-duration: 1.6s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+  }
+.animated-2 {
+    animation-duration: 1.6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+@keyframes bounce {
+    49% {transform: translateY(0);}
+    38% {transform: translateY(-15px);}
+    70% {transform: translateY(-15px);}
+  }
+  @keyframes bounce-2 {
+    50% {transform: translateY(0);}
+    40% {transform: translateY(-15px);}
+    60% {transform: translateY(-15px);}
+  }
+  
+
+
+
+@media (max-width: 545px){
+.main-not{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content:center;
+    color:rgb(56, 56, 56)
+}
+.main-not__not--title{
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    font-weight: lighter;
+
+}
+.main-not__not--parrafo{
+    font-size: 1.8rem;
+    text-align: justify;
+    width: 250px;
+    background-color:rgba(255, 255, 255, 0.329);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    line-height: 1.5;
+    
+}
+.main-not__not--sorry{
+    font-size: 6rem;
+    font-weight: 700;
+    color:rgb(56, 56, 56)
+}
+.main-not__not--sorry-lo{
+    font-size: 6rem;
+    margin-top: 1.5rem;
+
+}
+.main-div-not{
+    display: block;
+}
+}
+
