@@ -12,6 +12,9 @@
 .flex{
     display:flex;   
 }
+.border-rad{
+    border-radius: 1.5rem;
+}
 
 
 html{
@@ -93,7 +96,7 @@ body{
 }
 .main__input{
     border:solid 2px white;
-    border-radius: 3rem;
+    @extend .border-rad;
     background-color: #7cf8c9c5;
     font-family: 'Roboto Slab', serif;
     font-size: 1.8rem;
@@ -152,7 +155,7 @@ body{
 }
 .carousel-card{
     display: inline-block;
-    border-radius: 2.5rem;
+    @extend .border-rad;
     background-color: var(--text-color);
     overflow: hidden;
     margin: 1rem;
@@ -217,7 +220,7 @@ body{
 .login__container{
     background-color: rgba(151, 151, 151, 0.247);
     border: 2px solid white;
-    border-radius: 2.5rem;
+    @extend .border-rad;
     color: white;
     padding:  3rem 2.5rem;
     min-height: 500px;
@@ -314,7 +317,7 @@ input{
     background-color: rgba(255, 255, 255, 0.205);
     padding: 1rem;
     border:none;
-    border-radius: 2.5rem;
+    @extend .border-rad;
     margin: 1rem 0 2rem 0;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
@@ -362,7 +365,7 @@ input{
     text-align: justify;
     background-color:rgba(255, 255, 255, 0.329);
     padding: 2rem;
-    border-radius: 1.5rem;
+    @extend .border-rad;
     line-height: 1.5;
 }
 .main-not__not--sorry{
@@ -428,7 +431,7 @@ input{
     width: 250px;
     background-color:rgba(255, 255, 255, 0.329);
     padding: 2rem;
-    border-radius: 1.5rem;
+    @extend .border-rad;
     line-height: 1.5;
     
 }
